@@ -50,7 +50,7 @@ function Createtrip() {
     setItinerary(null)
 
     try {
-      const res = await fetch('http://localhost:5000/generate-itinerary', {
+      const res = await fetch('https://ai-trip-planner-ua8g.onrender.com/generate-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
